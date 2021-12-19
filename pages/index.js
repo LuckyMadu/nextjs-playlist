@@ -1,23 +1,17 @@
 import Link from "next/link";
-import { useRouter } from "next/router";
 
-export default function Home() {
-  const router = useRouter();
-
-  const handleClick = () => {
-    router.push("/product");
-  };
+function Home() {
   return (
     <div>
-      <h1>Home page</h1>
-      <Link href="/blog">
-        <a>Blog</a>
+      <h1>Next pre rendering</h1>
+      <Link href="/users">
+        <a>Users</a>
       </Link>
-      <Link href="/product">
-        <a>Products</a>
+      <Link href="/posts">
+        <a>Posts</a>
       </Link>
-
-      <button onClick={handleClick}>Order Product</button>
     </div>
   );
 }
+
+export default Home;
