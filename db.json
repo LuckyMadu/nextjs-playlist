@@ -1,4 +1,24 @@
 {
+  "news": [
+    {
+      "id": 1,
+      "title": "title 01",
+      "desc": "Desc 01",
+      "category": "sports"
+    },
+    {
+      "id": 2,
+      "title": "title 02",
+      "desc": "Desc 02",
+      "category": "health"
+    },
+    {
+      "id": 3,
+      "title": "title 03",
+      "desc": "Desc 03",
+      "category": "sports"
+    }
+  ],
   "products": [
     {
       "id": 1,
