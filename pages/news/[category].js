@@ -21,7 +21,9 @@ function CategoryArticle({ articles, category }) {
 export default CategoryArticle;
 
 export async function getServerSideProps(context) {
-  const { params } = context;
+  const { params, req, res } = context;
+  console.log(req.headers.cookie);
+  res.setHeader("Set-Cookie", ["name=Lahiru"]);
   const { category } = params;
   const response = await fetch(
     `http://localhost:4000/news?category=${category}`
