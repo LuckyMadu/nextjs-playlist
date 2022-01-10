@@ -33,6 +33,8 @@ export async function getServerSideProps(context) {
 
   const data = await response.json();
 
+  console.log("pre-rendering news list for sports", category);
+
   return {
     props: {
       articles: data,
