@@ -21,8 +21,10 @@ function CategoryArticle({ articles, category }) {
 export default CategoryArticle;
 
 export async function getServerSideProps(context) {
-  const { params, req, res } = context;
+  const { params, req, res, query } = context;
+  console.log(query);
   console.log(req.headers.cookie);
+
   res.setHeader("Set-Cookie", ["name=Lahiru"]);
   const { category } = params;
   const response = await fetch(
