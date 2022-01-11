@@ -1,4 +1,10 @@
 {
+  "dashboard": {
+    "posts": 12,
+    "likes": 200,
+    "followers": 100,
+    "following": 10
+  },
   "news": [
     {
       "id": 1,
@@ -37,6 +43,64 @@
       "name": "P 03",
       "price": 3000,
       "desc": "Desc 03"
+    }
+  ],
+  "events": [
+    {
+      "id": 1,
+      "title": "Event 1",
+      "desc": "Desc 01",
+      "category": "food",
+      "date": "Jan 02"
+    },
+    {
+      "id": 2,
+      "title": "Event 2",
+      "desc": "Desc 02",
+      "category": "sports",
+      "date": "Feb 02"
+    },
+    {
+      "id": 3,
+      "title": "Event 3",
+      "desc": "Desc 03",
+      "category": "food",
+      "date": "Feb 12"
+    },
+    {
+      "id": 4,
+      "title": "Event 4",
+      "desc": "Desc 04",
+      "category": "food",
+      "date": "May 02"
+    },
+    {
+      "id": 5,
+      "title": "Event 5",
+      "desc": "Desc 05",
+      "category": "food",
+      "date": "Jun 22"
+    },
+    {
+      "id": 6,
+      "title": "Event 6",
+      "desc": "Desc 06",
+      "category": "sports",
+      "date": "Jan 02"
+    },
+    {
+      "id": 7,
+      "title": "Event 7",
+      "desc": "Desc 07",
+      "category": "sports",
+      "date": "dec 02"
+    },
+    {
+      "id": 8,
+      "title": "Event 8",
+      "desc": "Desc 08",
+      "category": "food",
+      "date": "Jun 02"
     }
   ]
 }
