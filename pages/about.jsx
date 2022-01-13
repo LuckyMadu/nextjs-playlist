@@ -1,7 +1,16 @@
+import Head from "next/head";
 import Footer from "../components/Footer";
 
 function About() {
-  return <div className="content">About</div>;
+  return (
+    <>
+      <Head>
+        <title>About Lahiru</title>
+        <meta name="description" content="nextjs about" />
+      </Head>
+      <div className="content">About</div>
+    </>
+  );
 }
 
 export default About;
