@@ -1,18 +1,19 @@
+import Footer from "../components/Footer";
+import Header from "../components/Header";
 import "../styles/globals.css";
+import "../styles/layout.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { ThemeProvider } from "styled-components";
-
-const theme = {
-  colors: {
-    primary: "#355c7D",
-  },
-};
 
 function MyApp({ Component, pageProps }) {
+  if (Component.getLayout) {
+    return Component.getLayout(<Component {...pageProps} />);
+  }
   return (
-    <ThemeProvider theme={theme}>
+    <>
+      <Header />
       <Component {...pageProps} />
-    </ThemeProvider>
+      <Footer />
+    </>
   );
 }
 
