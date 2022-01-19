@@ -1,9 +1,6 @@
-import Head from "next/head";
-import Footer from "@/layout/Footer";
-import Header from "@/layout/Header";
 import "styles/globals.css";
-import "styles/layout.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import Navbar from "../components/Navbar";
 
 function MyApp({ Component, pageProps }) {
   if (Component.getLayout) {
@@ -11,13 +8,8 @@ function MyApp({ Component, pageProps }) {
   }
   return (
     <>
-      <Head>
-        <title>About Lahiru</title>
-        <meta name="description" content="nextjs about" />
-      </Head>
-      <Header />
+      <Navbar />
       <Component {...pageProps} />
-      <Footer />
     </>
   );
 }

@@ -11,10 +11,9 @@ a {
   text-decoration: none;
 }
 
-* {
-  box-sizing: border-box;
-}
-
-h2 {
-  color: orange;
+ul li a {
+  color: rgb(0, 0, 99);
+  text-decoration: none;
+  margin-left: 10px;
+  padding: 10px;
 }
